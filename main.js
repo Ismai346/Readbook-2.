@@ -1,7 +1,3 @@
-console.log("spck editor teste")
-
-
-
 
 <script>
   document.querySelector('.enviar').addEventListener('click', function(event) {
