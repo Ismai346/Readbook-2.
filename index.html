@@ -1,185 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Readbook</title>
-  <style>
-    img{
-width: 100px;
-height: 80px;
-border-radius: 100%;
-object-fit: cover;
-margin-left: 400px;
-margin-right: 400px;
-margin: 0 cover;
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Cardbook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+      body{
+  background-color: #2E2B72;
+  margin-left: 35%;
 }
-body{
-background-color: #425A5A;
+h1{
+  margin-top: 80%;
+  margin-left: 160px;
 
-}
-.social-links{
-list-style: none;
-padding: 0;
-margin-left: 0px;
-display: flex;
-justify-content: center;
-}
-.social-links li {
-margin-bottom: 5px;
-margin: 15px;
-margin-left: 8px;
-margin-right: 8px;
-height: 20px;
-width: 30px;
-background-color: white;
-border-radius: 5px;
-}
-h1, p{
-margin-left: 395px;
-}
-h2{
-margin-left: 390px;
-
-}
-h3{
-margin-left: 410px;
-}
-.wiz{
-margin-left: 100px;
-}
-section form {
-margin-left: 5px;
 }
 .campo{
-position: relative;
-margin-bottom: 20px;
-width: 80%;
-margin-left: 10%;
+  position: relative;
+  margin-bottom: 3%;
+  width: 40%;
 }
-.campo input, .campo textarea{
-padding: 10px;
-border: 1px solid #ccc;
-border-radius:5px ;
-width: 100%;
-box-sizing: border-box;
+input{
+  width: 149%;
+  height: 40px;
 }
-.campo label{
-position: absolute;
-margin-top: -20px;
-margin-left: 0px;
-font-size: 14px;
-color: black;
-background-color: #425A5A;
-padding: 0.5px;
+button{
+  width: 61%;
+  height: 40px;
+background-color: #72682B;  
 }
-.campo input:focus ~ label,
-.campo input:not(:placeholder-show) ~ label {
-top: -10px;
-font-size: 12px;
-color: #333;
+.bi-person-circle{
+  position: relative;
+  top: 500px;
+  left: 140px;
+  font-size: 100px;
 }
-.campo textarea{
-height: 50px;
+    </style>
 
-}
-.enviar{
-background-color: black;
-width: 10px;
-height: 35px;
-margin-left: 0px;
-margin-right: px;
-color: white;
-}
-footer{
-position: relative;
-clear: both;
-background-color: none;
-color: #fff;
-padding: 10px;
-text-align: center;
-bottom: 0px;
-left: 0px;
-width: 100%;
-
-}
-footer p {
-width: 80%;
-height: 10px;
-margin-left: 37px;
-
-}
-.descricao{
-margin-left: 100px;
-width: 80%;
-}
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-</head>
-<body>
-<section>
-  <h1>Readbook</h1>
-  <img src="./img/st.png" alt="imagem">
- </section>
-   
- <section>
-  <h2>Sobre mim</h2>
-  <p class="descricao">Sou Ismail Pedro, a nossa empresa é recem e otpou por ter algumas aulas de html, css e javascript, somos freelacers,  em fim, tambem podem nos chamar de "Readbook"</p>
-  </section>
-      
+  </head>
+  <body>
   <section>
-        <h3>Contacto</h3>
-   </section>
-   <section >
-     <form>
-       <div class="campo">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome...">
-        <br></br>
-        </div>
-        <div class="campo">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Digites seu e-mail...">
-        </div>
-        <div class="campo">
-        <label for="número">Número:</label>
-        <input type="tel" name="número" id="número" placeholder="Digite seu número...">
-        </div>
-        <div class="campo">
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
-        <input type="submit" value="Enviar" class="enviar">
-        </div>
-       </form>
+  <div class="text-center">
+     <i class="bi bi-person-circle "></i>
+     </div>
   </section>
-  <footer>   
-  <address>
-      Contacto:<a href="mailto:desmaelpedro@gmail.com">desmaelpedro@gmail.com</a>
-    </address>
-    <p class="wiz">&copy;2025 Readbook: Confira os nossos sites abaixo.</p>
-    <ul class="social-links">
-      <li>
-        <a href="https://github.com/IsmailC++"><i class="fa-brands fa-github"></i></a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/profile.php?id=100087227470975"><i class="fa-brands fa-facebook-f"></i></a>
-      </li>
-      <li>
-        <a href="https://wa.me/258857466140"><i class="fa-brands fa-whatsapp"></i></a>
-        </li>
-    </ul>
-
-  </footer>
+<section>
+    <h1>Login</h1>
+ </section>
+ <section>
+   <form id="formulario">
+   <div class="campo">
+      <label for="email"></label>
+    <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou número de telefone">
+    </div>
+    <div class="campo">
+    <label for="password"></label>
+    <input type="password" name="password" id="password" placeholder="Digite sua senha ">
+    </div>
+    <button id="Iniciar-Sessao">Iniciar Sessao</button>
+    </form>
+ </section>
+  </body>
   <script>
-    
-<script>
-  document.querySelector('.enviar').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita que o formulário seja enviado automaticamente
-    alert('Formulário enviado!');
+    document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("Iniciar-Sessao").addEventListener("click", function(event) {
+    event.preventDefault();
+    alert("Você está iniciando sessão com outra conta");
   });
-</script>
+});
   </script>
-</body>
 </html>
